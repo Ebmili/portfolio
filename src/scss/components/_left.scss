@@ -1,0 +1,14 @@
+.Left {
+  position: fixed;
+  top: 20rem;
+  left: 6rem;
+  display: flex;
+  flex-direction: column;
+  
+  @media screen and (max-width: 1080px) {
+    right: 2rem;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
