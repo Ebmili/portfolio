@@ -1,24 +1,23 @@
 .hero {
-  display: column;
+  margin: 4.5rem auto;
+  max-width: 880px;
   text-align: center;
-  justify-content: center;
-  padding-left: 200px;
-  padding-right: 200px;
 
   &-title {
     color: var(--theme-color);
     font-size: var(--tx2large);
     font-family: var(--fira-code);
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
   &-title-large {
     font-size: var(--tx3large);
     font-family: var(--raleway);
     color: var(--light-slate);
     letter-spacing: 0.07rem;
-    padding-bottom: 10px;
+    text-align: center;
   }
   &-title-sub {
+    padding-bottom: 5px;
     color: var(--lightest-slate);
   }
   &-text {
@@ -28,7 +27,7 @@
     line-height: 1.6rem;
     font-weight: 600;
     font-family: var(--raleway);
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 
   }
   &-button {
@@ -38,9 +37,28 @@
       font-size: var(--tsm1);
     }
   }
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 1020px) {
+    margin: 14rem auto;
+    max-width: 800px;
+    text-align: center;
+    .wrapper {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 600px;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    margin: 4rem auto;
+    max-width: 700px;
     &-text {
-      width: 80%;
+      margin: 20px 20px 20px 20px;
+      max-width: 800px;
+      text-align: center;
     }
   }
 }

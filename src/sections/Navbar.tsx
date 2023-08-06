@@ -1,4 +1,3 @@
-import Logo from "@/components/Logo";
 import Link from "next/link";
 
 function Navbar() {
@@ -11,11 +10,11 @@ function Navbar() {
       link: "/#contact",
     },
   ];
+
   return (
     <nav>
       <div className="wrapper">
       <a href="https://google.com">
-            <Logo />
           </a>
       <div className="brand">
     

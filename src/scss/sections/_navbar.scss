@@ -1,12 +1,12 @@
 nav {
   min-height: 60px;
-  padding: 0rem 3rem;
+  padding-top: 2rem;
   .wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 3rem;
+    padding: 0 4rem;
     transition: 0.3s ease-in-out;
     position: relative;
     .brand {
@@ -15,8 +15,12 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 3rem;
+        width: 3rem;
         fill: none;
+        margin: 2rem 0;
         cursor: pointer;
+        outline: 2px dashed transparent;
         transition: 0.3s ease-in-out;
         &:hover {
           fill: #64fad91a;
@@ -49,12 +53,11 @@ nav {
         list-style-type: none;
         &-item {
           a {
+            outline: 2px dashed transparent;
+            padding: 10px;
             text-decoration: none;
             color: inherit;
             transition: 0.3s ease-in-out;
-            &::before {
-              color: var(--theme-color);
-            }
           }
           a:focus {
             outline-color: var(--theme-color);
@@ -66,7 +69,7 @@ nav {
       }
     }
 
-    @media screen and (max-width: 1020px) {
+    @media screen and (max-width: 800px) {
       padding: 0 2rem;
       .nav-responsive-toggle {
         display: flex;
@@ -75,13 +78,13 @@ nav {
 
       .nav-items {
         position: fixed;
-        height: 80vh;
+        height: 100vh;
         right: 0;
         width: 0%;
         opacity: 0;
         visibility: hidden;
         top: 0;
-        padding: 10px 10px;
+        padding: 50px 10px;
         background-color: var(--light-navy);
         flex-direction: column;
         justify-content: center;
