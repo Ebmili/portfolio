@@ -1,6 +1,6 @@
 .hero {
-  margin: 4.5rem auto;
-  max-width: 880px;
+  margin: 9rem auto;
+  max-width: 1000px;
   text-align: center;
 
   &-title {
@@ -49,8 +49,8 @@
 
   @media screen and (max-width: 1024px) {
     max-width: 600px;
-  }
 
+  }
 
   @media screen and (max-width: 600px) {
     margin: 4rem auto;

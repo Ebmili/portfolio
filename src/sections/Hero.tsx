@@ -22,7 +22,7 @@ function Hero() {
       <p
         className="hero-text"
       >
-        I&apos;m a software tester looking for my first professional job as a Front-End developer. Over the last year, I have been working as a QA constantly developing. Of course, I always known that programming is something which every tester must know, this is why I started learn the very basics of what I test, so Front-End. I did not even notced when i fall in love with coding so much that I finished a course and developed my first website. I believe that being Front-End developer would be know the best for mysefl and enjoy. &nbsp;
+        I&apos;m a software tester looking for my first professional job as a Front-End developer. Over the last year, I have been working as a QA constantly developing. I did not even notced when i fall in love with coding so much that I finished a course and developed my first website. I would love to see myself in a position where I could develop as a Front-End developer. Also I believe my QA skills would be of course beneficial for every Front-End project.&nbsp;
 
       </p>
       <div

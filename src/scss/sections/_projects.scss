@@ -27,16 +27,32 @@
   }
   .exp-detail-li {
     list-style: none;
+    text-decoration: none;
+   
+  }
+
+  .exp-detail-li-row {
+    display: flex;
+    flex-direction: center;
+    gap: 1rem;
+    text-decoration: none;
+    list-style: none;
+  }
+  .exp-detail-li a {
+    text-decoration: none;
+    color: inherit;
   }
   .container {
     display: grid;
     grid-template-columns: 90% 10%;
+    grid-template-rows: 1fr auto;
     max-width: 90%;
     gap: 4rem;
     .exp-slider {
       list-style-type: none;
       position: relative;
       height: max-content;
+      
       .underline {
         background-color: var(--theme-color);
         position: absolute;
@@ -46,44 +62,120 @@
         width: 3px;
         transition: 0.3s ease-in-out;
       }
-      &::before {
-        position: absolute;
-        left: -0px;
-        content: "";
-        height: 100%;
-        width: 3px;
-        background-color: var(--lightest-navy);
-      }
+     
       &-item {
-        height: 3rem;
-        padding: 0 1.5rem;
         display: flex;
         vertical-align: middle;
         cursor: pointer;
         width: 100%;
+        border-radius: 5px;
+        background-color: transparent;
+        color: var(--light-slate);
+        font-family: var(--raleway);
+        
         span {
           display: flex;
           justify-content: center;
           align-items: center;
-          color: var(--slate);
+          background-color: transparent;
           font-family: var(--fira-code);
           font-size: var(--tsm1);
         }
         &:hover {
           background-color: var(--light-navy);
           span {
-            color: var(--theme-color);
+            background-color: transparent;
           }
         }
       }
       &-item-selected {
+        background-color: transparent;
         span {
-          color: var(--theme-color);
+          background-color: transparent;
         }
       }
     }
+    .exp-slider-container {
+      overflow: hidden; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .exp-slider {
+      display: flex; 
+      gap: 20px; 
+      width: calc(100% + 20px); 
+      margin-left: -10px; 
+      margin: 55px 15px 15px 15px;
+    }
+
+    .exp-slider-btn {
+      cursor: pointer;
+    
+      background-color:transparent;
+    }
+
+    .exp-slider-item {
+      flex: 0 0 calc(33.333% - 10px); 
+      padding: 10px;
+      margin: 0;
+      background-color: transparent;
+      color: var(--light-slate);
+      font-family: var(--raleway);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .exp-slider-item.active {
+      background-color: var(--light-navy);
+    }
+
+    
+.prev-exp-slider-btn,
+.next-exp-slider-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--light-slate);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.prev-exp-slider-btn:hover,
+.next-exp-slider-btn:hover {
+  color: var(--theme-color);
+}
+
+.prev-exp-slider-btn {
+  margin-right: 10px;
+}
+
+.next-exp-slider-btn {
+  margin-left: 10px;
+}
+
+.exp-details-flex {
+  display: flex;
+  margin-top: 1rem;
+  flex: 1; /* Add this line */
+}
+
+.exp-details-list {
+  flex: 3;
+  list-style-type: none;
+}
+.exp-details-position-company {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-decoration: none; 
+}
+
     .exp-details {
-      height: 40vh;
+      height: 70vh;
       font-family: var(--raleway);
       &-position {
         color: var(--lightest-slate);
@@ -97,14 +189,14 @@
       &-list {
         list-style-type: none;
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
         margin-top: 3rem;
-        padding-left: 20px;
+        padding-left: 70px;
         &-item {
           position: relative;
           color: var(--slate);
           font-weight: 500;
+  
           &::before {
             content: "▹";
             position: absolute;
@@ -115,7 +207,17 @@
           }
         }
       }
+      .exp-details-position-company {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        color: var(--theme-color);
+        font-family: var(--raleway);
+      }
     }
+    
   }
   @media screen and (max-width: 968px) {
     margin: 25rem auto;
