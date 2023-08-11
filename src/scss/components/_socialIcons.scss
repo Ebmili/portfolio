@@ -1,10 +1,10 @@
 .social-icons {
   position: fixed;
-  bottom: 0;
-  right: 4rem;
+  top: 20rem;
+  right: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+
   &-list {
     list-style-type: none;
     display: flex;
@@ -45,11 +45,5 @@
       margin: 0px auto;
       background-color: var(--light-slate);
     }
-  }
-  @media screen and (max-width: 1080px) {
-    left: 50rem;
-  }
-  @media screen and (max-width: 768px) {
-    display: none;
   }
 }

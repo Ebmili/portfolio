@@ -1,10 +1,12 @@
-import Link from 'next/link';
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-function Button({text, link}: {text: string; link: string}) {
+function Button({ text, link }: { text: string; link: string }) {
   return (
-    <Link href={link} className="btn">{text}</Link>
-  )
+    <Link className="btn" href={link}>
+      {text}
+    </Link>
+  );
 }
 
-export default Button
+export default Button;
