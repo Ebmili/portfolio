@@ -133,15 +133,13 @@
 
     .exp-slider {
       display: flex; 
-      gap: 20px; 
+      gap: 2px; 
       width: calc(100% + 20px); 
-      margin-left: -10px; 
-      margin: 55px 15px 15px 15px;
+      margin: 55px 15px 15px 0px;
     }
 
     .exp-slider-btn {
       cursor: pointer;
-    
       background-color:transparent;
     }
 
@@ -190,7 +188,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 7rem;
+  margin-left: 2rem;
 }
 
 .exp-details-list {
@@ -250,46 +248,26 @@
     }
     
   }
-  @media screen and (max-width: 968px) {
-    margin: 25rem auto;
-    max-width: 400px;
-    .title {
-      h2 {
-        &::after {
-          width: 100px;
-        }
-      }
-    }
-  }
   @media screen and (max-width: 600px) {
-    margin: 5rem auto;
-    .container {
-      grid-template-columns: 1fr;
-      padding: 1rem;
-      .exp-details {
-        height: max-content;
-      }
-      .exp-slider {
-        display: flex;
-        overflow-x: scroll;
-        &::before {
-          display: none;
-        }
-        .underline {
-          display: none;
-        }
-      }
+    margin: 4rem auto;
+    max-width: 700px;
+    &-text {
+      margin: 20px 0px 20px 20px;
+      max-width: 800px;
+      text-align: center;
     }
-  }
-  @media screen and (max-width: 480px) {
     .title {
       h2 {
-        padding-left: 20px;
+        &::before {
+          margin-right: 0rem;
+          color: var(--theme-color);
+        }
         &::after {
           display: none;
         }
       }
     }
-  }
-}
 
+  }
+
+}
